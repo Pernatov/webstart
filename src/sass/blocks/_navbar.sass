@@ -1,5 +1,5 @@
 .navbar
-  padding: 8px 0
+  padding: 7px 0
   &-block
     display: flex
     justify-content: space-between
@@ -11,22 +11,36 @@
   &__adress
     display: flex
     flex-direction: column
-  &__button
-    margin-left: 30px
+    color: $text-color
+    font-size: 13px
+    font-weight: 800
+    font-family: MuseoSansCyrl300
   &__phone
     display: inline-block
     color: $text-color
     font-size: 20px
     font-weight: 400
     text-decoration: none
-    margin-top: 9px
-@media (max-width: 768px)
-  .navbar
-    &__contacts
-      display: none
-    &__button
-      font-size: 12px
-      padding: 15px 26px
-    &__logo
-      width: 90px
-
+    margin-top: 7px
+    font-family: MuseoSansCyrl700
+  @media (max-width: 768px)
+    .navbar
+      &__contacts
+        display: none 
+  &__button
+    margin-left: 30px
+    padding: 18px 30px
+    font-size: 13px
+    font-weight: 600
+  @media (max-width: 567px)
+    .navbar
+      &__button
+        width: 137px
+        font-size: 10px
+        margin-left: 50px
+        padding: 14px 25px
+        border-radius: 5px
+      &-block
+        width: 277px
+      &__logo
+        width: 91px

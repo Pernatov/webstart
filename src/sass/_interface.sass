@@ -1,19 +1,26 @@
-body
-  font-family: sans-serif
 img 
   max-width: 100%
+
 .container
   width: 1170px
   margin: auto
-@media (max-width: 1200px)
+
+@media (max-width: 1199px)
   .container
-    width: 760px
+    max-width: 760px
+
 @media (max-width: 768px)
   .container
-    max-width: 580px
-    width: 95%
+    max-width: 560px
+
+@media (max-width: 567px)
+  .container
+    max-width: 320px
+    width: 280px
+
 .button
   border-radius: 10px
   background-color: $main-color
   border: none
-  padding: 18px 30px
+  padding: 16px 30px
+  font-family: MuseoSansCyrl700
