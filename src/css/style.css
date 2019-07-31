@@ -121,8 +121,8 @@ img {
 
 .hero-image {
   display: block;
-  width: 570px;
-  height: 488px;
+  max-width: 570px;
+  max-height: 488px;
   -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
           box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
@@ -231,6 +231,12 @@ img {
   }
   .hero-list__image {
     margin-right: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero {
+    height: 653px;
   }
 }
 /*# sourceMappingURL=style.css.map */

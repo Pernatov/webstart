@@ -4,8 +4,8 @@
   &-image
     display: block
     // Оформление фотографии
-    width: 570px
-    height: 488px
+    max-width: 570px
+    max-height: 488px
     box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
   &-block
     display: flex
@@ -73,8 +73,9 @@
         font-size: 12px
       &__image
         margin-right: 15px
-
-
+@media (max-width: 320px)
+  .hero
+    height: 653px
 
 
 
