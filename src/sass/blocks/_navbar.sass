@@ -1,5 +1,7 @@
 .navbar
-  padding: 7px 0
+  padding: 0.21rem
+  &__logo
+    padding-top: 0.1rem
   &-block
     display: flex
     justify-content: space-between
@@ -13,25 +15,26 @@
     flex-direction: column
     color: $text-color
     font-size: 13px
+    // font-family: 'Museo Sans Cyrl 500'
     +reg
-    // font-weight: 400
   &__phone
     display: inline-block
     color: $text-color
     font-size: 20px
     text-decoration: none
-    margin-top: 7px
+    margin-top: 6px
+    // font-family: 'Museo Sans Cyrl 700'
     +bold
-    // font-weight: 400
   @media (max-width: 768px)
     .navbar
       &__contacts
         display: none 
   &__button
-    margin-left: 30px
-    padding: 18px 30px
+    margin-left: 29.4px
+    padding: 17.5px 29px
     font-size: 13px
-    font-weight: 600
+    // font-family: 'Museo Sans Cyrl 700'
+    +bold
   @media (max-width: 567px)
     .navbar
       &__button
