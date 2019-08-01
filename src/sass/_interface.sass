@@ -1,3 +1,6 @@
+* 
+  box-sizing: border-box
+
 body
   +reg
 img 
@@ -6,6 +9,28 @@ img
 .container
   width: 1170px
   margin: auto
+
+.button
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+.section
+  padding: 90px 0
+  &-title
+    display: block
+    font-size: 24px
+    +bold
+  &-subtitle
+    display: block
+    font-size: 16px
+.input
+  border: 1px solid $border-input
+  padding: 20px 26px
+  font-size: 15px
+  border-radius: 10px
 
 @media (max-width: 1199px)
   .container
@@ -20,8 +45,3 @@ img
   .container
     max-width: 320px
     width: 280px
-
-.button
-  border-radius: 10px
-  background-color: $main-color
-  border: none
