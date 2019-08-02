@@ -1,7 +1,6 @@
 .offer
   background: url('../img/offer/offer-bg.png') no-repeat
   background-position: center right
-  background-size: contain
   position: relative
   &:before
     content: ''
@@ -11,41 +10,90 @@
     top: 0
     left: 0
     background-color: #ffffff
+  &__tel
+    padding-left: 31.5px
+  &__container
+    width: 1172px
   &-block
-    width: 50%
-    padding-right: 90px
+    width: 495px
     position: relative
   &__title
     max-width: 350px
     line-height: 35px
-    margin-bottom: 24px
+    padding-left: 1px
+    margin-bottom: 19.5px
   &__subtitle
     max-width: 250px
     margin-bottom: 30px
+    padding-left: 0.5px
+  &__form
+    width: 495
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
   &__input
-    // margin-right: 14px
     margin-bottom: 30px
     &:first-child
       margin-right: 10px
-    width: 240px
+    width: 48.5%
   &__button
     width: 100%
     min-height: 70px
-    padding: 27px
+    +bold
+  &__text-box
+    display: flex
+    justify-content: space-between
+    margin-top: 25px
+    line-height: 24px
+    font-size: 15px
+  &__manager
+    width: 226px
+  &__call-us
+    width: 199px
+  &__phone
+    line-height: 24px
+    color: $text-color
+    text-decoration: none
+    +bold
 @media (max-width: 1199px)
   .offer
     background-size: cover
+    &__block
+      position: absolute
+      left: 0
     &__input
-      width: 100%
+      width: 70%
       margin-bottom: 10px
     &__button
+      width: 70%
       font-size: 13px
+    &__text-box
+      width: 70%
+      font-size: 11px
+    &__manager
+      width: 48%
+    &__call-us
+      width: 42%
 @media (max-width: 768px)
   .offer
     background: #ffffff
     &-block
       width: 100%
       padding-right: 0
+    &__input
+      margin-left: 2px
+      width: 48%
+      margin-bottom: 10px
+    &__button
+      width: 100%
+      font-size: 14px
+    &__text-box
+      width: 100%
+      font-size: 14px
+    &__manager
+      width: 37%
+    &__call-us
+      width: 31%
 
 
 
