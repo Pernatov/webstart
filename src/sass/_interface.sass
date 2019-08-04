@@ -33,17 +33,33 @@ img
   padding-left: 25px
   font-size: 15px
   border-radius: 10px
+  &:focus
+    border: 1px solid $main-color
+    outline: none
 
 @media (max-width: 1199px)
   .container
-    max-width: 760px
-
+    width: 729px
+  .navbar__container
+    max-width: 729px
+  .offer__container
+    max-width: 729px
 @media (max-width: 768px)
   .container
-    max-width: 580px
-    width: 90%
-
+    width: 450px
+  .navbar__container
+    max-width: 450px
+  .offer__container
+    max-width: 450px
 @media (max-width: 567px)
   .container
-    max-width: 320px
-    width: 280px
+    margin-right: auto
+    margin-left: auto
+    width: 90%
+  .navbar__container
+    max-width: 90%
+  .offer__container
+    max-width: 90%
+  .section
+    position: center
+

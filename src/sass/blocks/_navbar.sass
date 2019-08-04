@@ -1,7 +1,7 @@
 .navbar
   padding: 3.8px
   &__container
-    width: 1170px
+    max-width: 1170px
   &__logo
     padding-top: 0.1rem
   &-block
@@ -44,12 +44,22 @@
   @media (max-width: 567px)
     .navbar
       &__button
-        width: 137px
+        width: 141px
         font-size: 10px
-        margin-left: 50px
         padding: 14px 25px
         border-radius: 5px
       &-block
-        width: 277px
+        width: 100%
       &__logo
         width: 91px
+  @media (max-width: 320px)
+    .navbar
+      &-block
+        padding-right: 2px
+        padding-top: 1px
+      &__container
+        padding-top: 10px
+        margin-bottom: 12px
+      &__button
+        font-size: 10px
+        border-radius: 5px
