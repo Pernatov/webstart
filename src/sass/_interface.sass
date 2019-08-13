@@ -5,6 +5,7 @@ body
   +reg
 img 
   max-width: 100%
+  display: block
 
 .container
   width: 1177px
@@ -20,8 +21,10 @@ img
 .section
   padding: 57.5px 0
   &-title
+    max-width: 500px
     display: block
     font-size: 24px
+    text-align: center
     +bold
   &-subtitle
     display: block
@@ -36,6 +39,32 @@ img
   &:focus
     border: 1px solid $main-color
     outline: none
+.scroll-up
+  position: fixed
+  right: 1%
+  bottom: 3%
+  display: flex
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  border: 2px solid $main-color
+  background: url(../img/scroll-up.png) no-repeat center
+  background-size: 80%
+  background-color: $main-color
+  cursor: pointer
+  &:focus
+    outline: none
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+  opacity: 0
+  &_active
+    transition: 1.2s
+    opacity: 0.6
+
+  
+
+
 
 @media (max-width: 1199px)
   .container
@@ -62,4 +91,5 @@ img
     max-width: 90%
   .section
     position: center
+
 

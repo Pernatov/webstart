@@ -4,12 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lesson-16-additional</title>
+  <title>Lesson-21-1</title>
   <link rel="stylesheet" href="css/normalize.css">
+
+  <!-- <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css"> -->
+  
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <!-- <link rel="stylesheet" href="css/owl.theme.default.css"> -->
+
+  <link rel="stylesheet" href="css/animate.css">
+
   <link rel="stylesheet" href="css/style.css">
-</head>
 
 <body>
+
   <nav class="navbar">
     <div class="container navbar__container">
       <div class="navbar-block">
@@ -25,7 +34,7 @@
               </a>
           </div>
           <!-- /.navbar__contacts -->
-          <button class="button navbar__button" id="button">Перезвоните мне</button>
+          <button class="button navbar__button wow pulse" id="button" data-wow-delay="7s">Перезвоните мне</button>
         </div>
         <!-- /.navbar__info -->
       </div>
@@ -40,13 +49,13 @@
       <div class="container">
         <div class="hero-block">
           <div class="hero-text">
-            <h1 class="hero-text__title">Внутренняя отделка помещений "под ключ"
+            <h1 class="hero-text__title wow zoomIn" data-wow-delay="0.2s">Внутренняя отделка помещений "под ключ"
             </h1>
-            <span class="hero-text__subtitle">
+            <span class="hero-text__subtitle wow zoomIn" data-wow-delay="1s">
               с гарантией качества, прописанной в договоре
             </span>
             <ul class="hero-list">
-              <li class="hero-list__item">
+              <li class="hero-list__item wow fadeInLeft" data-wow-delay="1.8s">
                 <div class="hero-list__image">
                   <img src="img/hero/clock.png" alt="clock">
                 </div>
@@ -54,7 +63,7 @@
                   Точно соблюдаем сроки
                 </p>
               </li>
-              <li class="hero-list__item">
+              <li class="hero-list__item wow fadeInLeft" data-wow-delay="2.8s">
                 <div class="hero-list__image">
                   <img src="img/hero/calculator.png" alt="calculator">
                 </div>
@@ -62,7 +71,7 @@
                   Рассчитаем смету на работы <br> и материалы в день обращения                    
                 </p>
               </li>
-              <li class="hero-list__item">
+              <li class="hero-list__item wow fadeInLeft" data-wow-delay="3.8s">
                 <div class="hero-list__image">
                   <img src="img/hero/paint-board.png" alt="paint-board">                   
                 </div>
@@ -73,7 +82,7 @@
             </ul>
           </div>
           <!-- /.hero-list -->
-          <div class="hero-image">
+          <div class="hero-image wow fadeInRight" data-wow-delay="0.2s">
             <img src="img/hero/interior.png" alt="Внутренняя  отделка">
           </div>
           <!-- /.hero-image -->
@@ -92,14 +101,13 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!
           </span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__form">
-            <input type="text" class="input offer__input" placeholder= "Ваше имя">
-            <input type="tell" class="input offer__input offer__tel" placeholder= "Ваш телефон">
-            <button class="button offer__button">Получить бесплатный дизайн-проект
-            </button> 
-            <!-- /.button offer__button -->
+          <form action="#" id="offer-form" class="form offer__form">
+            <input type="text" name="username" class="input offer__input" placeholder= "Ваше имя" required>
+            <input type="tel" name="userphone" class="input offer__input offer__tel" placeholder= "Ваш телефон" required>
+            <button class="button offer__button wow pulse" data-wow-delay="10s">Получить бесплатный дизайн-проект</button> 
           </form>
           <!-- /.form offer__form -->
+          <div class="success"></div>
           <div class="offer__text-box">
             <span class="offer__manager">
               Наш менеджер перезвонит Вам в течение 60 секунд
@@ -110,8 +118,6 @@
           </div>
         </div>
         <!-- /.offer-block -->
-        
-
       </div>
       <!-- /.container -->
     </section>
@@ -120,16 +126,231 @@
   </main>
   <!-- main -->
 
-<div class="modal" id="modal">
-  <div class="modal-dialog">
-    <button class="modal-dialog__close" id="close">&times;</button>
-    <h4 class="modal-dialog__title">Всплывающее окно</h4>
-  </div>
-  <!-- /.modal-dialog -->
-</div>
-<!-- /.modal -->
+<section class="section portfolio">
+  <div class="container">
+    <h2 class="section-title portfolio__title">Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах</h2>
 
-<script src="js/main.js"></script>
+    <!-- Слайдер OWL-CAROUSEL -->
+
+    <div class="slider owl-carousel">
+      <div class="owl-carousel__item"><img class="owl-carousel__image" src="img/portfolio/slider-1.png" alt="living room 1">
+      </div>
+      <!-- /.slider__item -->
+      <div class="owl-carousel__item"><img class="owl-carousel__image" src="img/portfolio/slider-2.png" alt="living room 2">
+      </div>
+      <!-- /.slider__item -->
+      <div class="owl-carousel__item"><img class="owl-carousel__image" src="img/portfolio/slider-3.png" alt="bedroom"></div>
+      <!-- /.slider__item -->
+      <div class="owl-carousel__item"><img class="owl-carousel__image" src="img/portfolio/slider-1.png" alt="living room 1">
+      </div>
+      <!-- /.slider__item -->
+      <div class="owl-carousel__item"><img class="owl-carousel__image" src="img/portfolio/slider-2.png" alt="living room 2">
+      </div>
+      <!-- /.slider__item -->
+      <div class="owl-carousel__item"><img class="owl-carousel__image" src="img/portfolio/slider-3.png" alt="bedroom"></div>
+      <!-- /.slider__item -->
+     </div>
+     <!-- /.slider -->
+    <!--/.section-title portfolio__title -->
+  </div> 
+  <!-- /.container -->
+</section>
+<!-- /.section portfolio -->
+
+<section class="section price">
+  <div class="container">
+    <div class="h2 section-title price__title">У нас очень гибкая система скидок
+      на комплексные работы!</div>
+    <!-- /.h2 section-title price__title -->
+    <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
+    <!-- /.section-subtitle price__subtitle -->
+    <div class="cards">
+      <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
+        <div class="card__image"><img src="img/price/bathroom.png" alt=""></div>
+        <!-- /.card__image -->
+        <div class="card__text">
+          <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+          <!-- /.card__title -->
+          <a href="#" class="card__link">Узнать цены</a>
+          <!-- /.card__link -->
+        </div>
+        <!-- /.card__text -->
+      </div>
+      <!-- /.card -->
+      <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
+        <div class="card__image"><img src="img/price/living.png" alt=""></div>
+        <!-- /.card__image -->
+        <div class="card__text">
+          <h4 class="card__title">Ремонт комнат и квартир</h4>
+          <!-- /.card__title -->
+          <a href="#" class="card__link">Узнать цены</a>
+          <!-- /.card__link -->
+        </div>
+        <!-- /.card__text -->
+      </div>
+      <!-- /.card -->
+      <div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
+        <div class="card__image"><img src="img/price/office.png" alt=""></div>
+        <!-- /.card__image -->
+        <div class="card__text">
+          <h4 class="card__title">Отделка офисных помещений</h4>
+          <!-- /.card__title -->
+          <a href="#" class="card__link">Узнать цены</a>
+          <!-- /.card__link -->
+        </div>
+        <!-- /.card__text -->
+      </div>
+      <!-- /.card -->
+      <div class="card price__card wow fadeInUp" data-wow-delay="0.8s">
+        <div class="card__image"><img src="img/price/buildings.png" alt=""></div>
+        <!-- /.card__image -->
+        <div class="card__text">
+          <h4 class="card__title">Ремонт в новостройках</h4>
+          <!-- /.card__title -->
+          <a href="#" class="card__link">Узнать цены</a>
+          <!-- /.card__link -->
+        </div>
+        <!-- /.card__text -->
+      </div>
+      <!-- /.card -->
+      <div class="card price__card wow fadeInUp" data-wow-delay="1s">
+        <div class="card__image"><img src="img/price/kitchen.png" alt=""></div>
+        <!-- /.card__image -->
+        <div class="card__text">
+          <h4 class="card__title">Ремонт кухонь</h4>
+          <!-- /.card__title -->
+          <a href="#" class="card__link">Узнать цены</a>
+          <!-- /.card__link -->
+        </div>
+        <!-- /.card__text -->
+      </div>
+      <!-- /.card -->
+      <div class="card price__card wow fadeInUp" data-wow-delay="1.2s">
+        <div class="card__image"><img src="img/price/houses.png" alt=""></div>
+        <!-- /.card__image -->
+        <div class="card__text">
+          <h4 class="card__title">Ремонт дач и коттеджей</h4>
+          <!-- /.card__title -->
+          <a href="#" class="card__link">Узнать цены</a>
+          <!-- /.card__link -->
+        </div>
+        <!-- /.card__text -->
+      </div>
+      <!-- /.card -->
+    </div>
+    <!-- /.cards -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.section price -->
+
+<section class="section steps">
+  <div class="container">
+    <h2 class="section-title steps__title">Наши специалисты готовы выехать на замер в любое удобное для Вас время</h2>
+    <!-- /.section-title steps__title -->
+    <span class="section-subtitle steps__subtitle">5 шагов до ремонта</span>
+    <!-- /.section-subtitle steps__subtitle -->
+    <div class="steps-block">
+      <div class="step wow fadeInLeft" data-wow-delay="0.2s">
+        <div class="step__image"><img src="img/steps/woman-with-headset.png" alt="headset"></div>
+        <!-- /.step__image -->
+        <p class="step__text">Вы звоните нам или оставляете заявку</p>
+        <!-- /.step__text -->
+      </div>
+      <!-- /.step -->
+      <div class="step wow fadeInLeft" data-wow-delay="0.7s">
+        <div class="step__image"><img src="img/steps/wall-clock.png" alt="clock"></div>
+        <!-- /.step__image -->
+        <p class="step__text">Согласуем удобное для Вас время выезда специалиста на замер</p>
+        <!-- /.step__text -->
+      </div>
+      <!-- /.step -->
+      <div class="step wow fadeInLeft" data-wow-delay="1.2s">
+        <div class="step__image"><img src="img/steps/money.png" alt="money"></div>
+        <!-- /.step__image -->
+        <p class="step__text">Рассчитываем смету согласовываем с Вами</p>
+        <!-- /.step__text -->
+      </div>
+      <!-- /.step -->
+      <div class="step wow fadeInLeft" data-wow-delay="1.7s">
+        <div class="step__image"><img src="img/steps/folded-document-icon.png" alt="folded document"></div>
+        <!-- /.step__image -->
+        <p class="step__text">Подписываем договор закупаем материал по оптовым ценам</p>
+        <!-- /.step__text -->
+      </div>
+      <!-- /.step -->
+      <div class="step wow fadeInLeft" data-wow-delay="2.2s">
+        <div class="step__image"><img src="img/steps/calendar.png" alt="calendar"></div>
+        <!-- /.step__image -->
+        <p class="step__text">Выполняем ремонт в указанные сроки</p>
+        <!-- /.step__text -->
+      </div>
+      <!-- /.step -->
+    </div>
+    <!-- /.steps-block -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.section steps -->
+
+
+<div class="modal" id="modal">
+  <div class="modal__dialog">
+   <button class="modal__close" id="close">&times;</button>
+   <div class="modal-column modal-column__first">
+     <div class="modal-content">контент</div>
+   </div>
+   <div class="modal-column modal-column__second">
+      <h2 class="modal__title">Узнайте точную стоимость ремонта по телефону!</h2>
+      <span class="modal__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+      <form action="#" class="modal__form">
+       <input type="text" class="input modal__input" placeholder="Ваше имя">
+       <input type="tell" class="input modal__input" placeholder="Ваш телефон">
+       <button class="button modal__button">Узнать стоимость</button>
+       <div class="modal__info">
+         <div class="modal__call-us">Или Вы можете перезвонить нам сами по телефону:</div> 
+         <a class="modal__phone-number" href="tel:+7(8182)42-51-31">+7 (8182) 42-51-31</a>
+       </div>
+      </form>
+      <!-- /.form -->
+     </div>
+   </div>
+   <!-- /.modal-dialog -->
+ </div>
+ <!-- /.modal -->
+
+<div class="ty" id="ty">
+  <div class="ty__dialog">
+    <button class="ty__close" id="ty-close">&times;</button>
+    <!-- /.modal-ty__close -->
+    <h2 class="ty__message" id="ty-message">Спасибо, </h2>
+  </div>
+  <!-- /.modal-ty__dialog -->
+</div>
+<!-- /.modal-ty -->
+
+
+<button class="scroll-up" id="scroll-up"></button>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="js/modal.js"></script>
+<script src="js/scroll_up.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- <script src="js/slick.min.js"></script> -->
+
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/slider.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script>
+  // инициализация WOW.js
+  new WOW().init();
+</script>
 
 </body>
 
