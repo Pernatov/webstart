@@ -1,11 +1,14 @@
 .portfolio
   background: $secondary-color url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
   background-size: 50%
+  padding: 90px 0px
   &__title
     max-width: 790px
     margin-bottom: 100px
     margin-right: auto
     margin-left: auto
+    line-height: 45px
+    font-size: 30px
   &__arrows
     display: flex
     justify-content: space-between
@@ -27,9 +30,25 @@
   max-width: 120px
   margin: auto
   margin-top: 68px
-  
+
 
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev
   outline: none
   &:hover
     cursor: pointer
+
+@media (max-width: 1200px)
+  .portfolio
+    padding: 50px 0px
+@media (max-width: 768px)
+  .portfolio
+    background-size: 0%
+    &__title
+      font-size: 24px
+      line-height: 25px
+      margin-bottom: 70px
+@media (max-width: 567px)
+  .portfolio
+    &__title
+      margin-bottom: 30px
+      font-size: 16px

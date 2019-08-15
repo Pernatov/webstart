@@ -2,6 +2,7 @@
   background: url('../img/offer/offer-bg.png') no-repeat
   background-position: center right
   position: relative
+  padding: 70px 0px
   &:before
     content: ''
     width: 50%
@@ -10,15 +11,24 @@
     top: 0
     left: 0
     background-color: #ffffff
-  &__tel
-    padding-left: 31.5px
-  &__container
-    width: 1172px
+  &__text-box
+    display: flex
+    justify-content: space-between
+    margin-top: 25px
+    line-height: 24px
+    font-size: 15px
+  &__manager
+    display: block
+    max-width: 230px
+  &__call-us
+    display: block
+    max-width: 200px
   &-block
-    width: 495px
+    width: 50%
     position: relative
+    padding-right: 90px  
   &__title
-    max-width: 350px
+    max-width: 360px
     line-height: 35px
     padding-left: 1px
     margin-bottom: 19.5px
@@ -27,12 +37,8 @@
     max-width: 250px
     margin-bottom: 30px
     padding-left: 0.5px
-  &__form
-    width: 495
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
   &__input
+    width: 240px
     margin-bottom: 30px
     &:first-child
       margin-right: 10px
@@ -40,41 +46,63 @@
   &__button
     width: 100%
     min-height: 70px
+    font-size: 16px
     +bold
-  &__text-box
-    display: flex
-    justify-content: space-between
-    margin-top: 25px
-    line-height: 24px
-    font-size: 15px
-  &__manager
-    width: 226px
-  &__call-us
-    width: 199px
   &__phone
+    display: block
     line-height: 24px
-    color: $text-color
     text-decoration: none
+    color: $text-color
     +bold
-@media (max-width: 1199px)
+#username-error.offer-invalid
+  display: block
+  text-align: center
+  height: 20px
+  width: 180px
+  position: absolute
+  top: 256px
+  left: 39px
+  font-size: 14px
+  color: $invalid-color
+  opacity: 0.9
+ 
+#userphone-error.offer-invalid
+  display: block
+  text-align: center
+  height: 20px
+  width: 150px
+  position: absolute
+  top: 256px
+  left: 305px
+  font-size: 14px
+  color: $invalid-color
+  opacity: 0.9
+  
+
+@media (max-width: 1200px)
   .offer
+    padding: 50px 0px
     background-size: cover
-    &__block
-      position: absolute
-      left: 0
+    &-block
+      padding-right: 30px
     &__input
-      width: 70%
+      width: 100%
       margin-bottom: 10px
     &__button
-      width: 70%
-      font-size: 14px
+      width: 100%
+      font-size: 12px
     &__text-box
-      width: 70%
       font-size: 11px
     &__manager
-      width: 48%
+      max-width: 170px
     &__call-us
-      width: 42%
+      width: 145px
+    #username-error.offer-invalid
+      top: 210px
+      left: 139px
+    #userphone-error.offer-invalid
+      top: 285px
+      left: 159px
 @media (max-width: 768px)
   .offer
     background: #ffffff
@@ -82,14 +110,27 @@
       width: 100%
       padding-right: 0
     &__input
-      width: 48%
       margin-bottom: 10px
     &__button
       width: 100%
       font-size: 14px
     &__text-box
+      flex-direction: column
       width: 100%
       font-size: 14px
+    &__manager
+      max-width: 214px
+      margin-bottom: 15px
+    &__call-us
+      width: 178px
+      margin-bottom: 30px
+    #username-error.offer-invalid
+      top: 210px
+      left: 200px
+    #userphone-error.offer-invalid
+      top: 285px
+      left: 215px
+
 @media (max-width: 567px)
   .offer
     padding: 0px 0px
@@ -102,10 +143,11 @@
       padding-left: 0px
       font-size: 16px
       line-height: 25px
-      max-width: 240px
+      max-width: 345px
     &__subtitle
       font-size: 11px
       margin-bottom: 25px
+      max-width: 100%
     &__input
       width: 100%
       margin-bottom: 15px
@@ -119,16 +161,27 @@
       padding-left: 50px
       padding-top: 10px
       padding-bottom: 10px
-    &__text-box
-      width: 100%
-      flex-direction: column
     &__manager
       width: 214px
       margin-bottom: 15px
     &__call-us
       width: 178px
       margin-bottom: 30px
-@media (max-width: 320px)
+    #username-error.offer-invalid
+      top: 125px
+      left: 120px
+    #userphone-error.offer-invalid
+      top: 200px
+      left: 135px
+@media (max-width: 348px)
+  .offer
+    #username-error.offer-invalid
+      top: 162px
+      left: 99px
+    #userphone-error.offer-invalid
+      top: 235px
+      left: 115px
+@media (max-width: 336px)
   .offer
     padding-top: 30px
     // max-height: 590px
@@ -175,6 +228,7 @@
     &__call-us
       margin-top: 0px
       margin-bottom: 0px
+    
 
 
 

@@ -19,7 +19,6 @@ img
     background-color: lighten($main-color, 10%)
     cursor: pointer
 .section
-  padding: 57.5px 0
   &-title
     max-width: 500px
     display: block
@@ -36,9 +35,18 @@ img
   padding-left: 25px
   font-size: 15px
   border-radius: 10px
+  &.offer-invalid
+    border: 1px solid $invalid-color
+  &.modal-invalid
+    border: 1px solid $invalid-color
+  &.brif-invalid
+    border: 1px solid $invalid-color
   &:focus
     border: 1px solid $main-color
     outline: none
+
+// .error
+//   border: 1px solid red
 .scroll-up
   position: fixed
   right: 1%
@@ -66,9 +74,9 @@ img
 
 
 
-@media (max-width: 1199px)
+@media (max-width: 1200px)
   .container
-    width: 729px
+    width: 760px
   .navbar__container
     max-width: 729px
   .offer__container
@@ -80,6 +88,7 @@ img
     max-width: 450px
   .offer__container
     max-width: 450px
+    
 @media (max-width: 567px)
   .container
     margin-right: auto

@@ -6,6 +6,7 @@ $(document).ready(function(){
 
   button.on('click', function() {
     modal.addClass('modal_active');
+    console.log("Открыто модальное окно");
   });
 
   cardLink.on('click', function(event) {
@@ -17,7 +18,8 @@ $(document).ready(function(){
   });
 
   close.on('click', function() {
-    modal.removeClass('modal_active')
+    modal.removeClass('modal_active');
+    console.log("Закрыто модальное окно");
   }); 
 
   // setTimeout('$("#modal").hide();', 5000);
