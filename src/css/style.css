@@ -1652,7 +1652,7 @@ img {
   .brif {
     background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 50%, cover;
+    background-size: 100% 47%, cover;
     background-repeat: repeat-x, no-repeat;
   }
   .brif-block {
@@ -1672,7 +1672,7 @@ img {
 
 @media (max-width: 567px) {
   .brif {
-    background-size: 100% 42%, cover;
+    background-size: 100% 44%, cover;
     padding: 20px;
   }
   .brif__form {
